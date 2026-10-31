@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: sistema-orientacion
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: SCHEDULE_TOKEN_SECRET
+        sync: false
+      - key: CALENDAR_FEED_TOKEN
+        sync: false
+      - key: ADMIN_CORREO
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ORIENTADORA_CORREO
+        value: nancy.zuniga.rangel@una.cr
+      - key: ORIENTADORA_NOMBRE
+        value: Orientadora del servicio

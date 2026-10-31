@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blush: #fdf0f5;
+  --color-petal: #fadce9;
+  --color-pink: #f6bfd3;
+  --color-rose: #f19fb9;
+  --color-berry: #ea7ea3;
+  --color-ink: #4a2c38;
+  --color-danger: #9b3050;
+  --font-serif: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --font-sans: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
