@@ -6,7 +6,7 @@
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "test": "node --import tsx --test src/config/read-environment.test.ts src/modules/health/check-health.test.ts src/modules/solicitudes/parse-orientation-request.test.ts src/modules/solicitudes/build-request-notice.test.ts src/modules/solicitudes/create-orientation-request.test.ts src/modules/admin/decide-orientation-request.test.ts src/modules/citas/schedule-token.test.ts src/modules/citas/list-open-slots.test.ts src/modules/citas/resolve-appointment-close.test.ts src/modules/citas/build-booking-notice.test.ts src/modules/correo/gmail-compose-url.test.ts src/modules/correo/send-formsubmit-mail.test.ts src/modules/admin/admin-session.test.ts src/modules/admin/build-approved-workbook.test.ts"
+    "test": "node --import tsx --test src/config/read-environment.test.ts src/database/prepare-database-connection.test.ts src/modules/health/check-health.test.ts src/modules/solicitudes/parse-orientation-request.test.ts src/modules/solicitudes/build-request-notice.test.ts src/modules/solicitudes/create-orientation-request.test.ts src/modules/admin/decide-orientation-request.test.ts src/modules/citas/schedule-token.test.ts src/modules/citas/list-open-slots.test.ts src/modules/citas/resolve-appointment-close.test.ts src/modules/citas/build-booking-notice.test.ts src/modules/correo/gmail-compose-url.test.ts src/modules/correo/send-formsubmit-mail.test.ts src/modules/admin/admin-session.test.ts src/modules/admin/build-approved-workbook.test.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
